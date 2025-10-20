@@ -22,21 +22,17 @@ const Add = ({ addTask }) => {
     
     <div>
 
-        <header className='text-2xl font-bold'>
-            <h1>Simple To-Do-List App</h1>
-        </header>
-
-        <div className='w-[500px] flex gap-2'>
+        <div className='flex gap-2'>
 
             <input
             value={listTask}
             onChange={handleInputChange}
             placeholder='Create task here'
-            className='border p-2 '
+            className='p-2 w-[600px] bg-white rounded-2xl'
             ></input>
 
             <button 
-            className='border p-2'
+            className='p-3 bg-green-500 rounded-2xl'
             onClick={handleClick}
             >
                 Add task
